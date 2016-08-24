@@ -90,7 +90,6 @@ namespace ClassLibrary1
             rtb.Focus();
         }
 
-
         private void 宋体ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changertbtextstyle("宋体", this.rtb);

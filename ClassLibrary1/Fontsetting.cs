@@ -62,23 +62,23 @@ namespace ClassLibrary1
                             if (isUnderline)
                             {
                                 //加粗倾斜且有下划线,此时设置倾斜+下划线
-                                rtb.SelectionFont = new Font(Font, FontStyle.Italic | FontStyle.Underline);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Italic | FontStyle.Underline);
                             }
                             else
                             {
                                 //加粗倾斜且没有下划线,此时设置倾斜
-                                rtb.SelectionFont = new Font(Font, FontStyle.Italic);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Italic);
                             }
                         }
                         else
                         if (isUnderline)
                         {
                             //加粗且有下划线,此时设置下划线
-                            rtb.SelectionFont = new Font(Font, FontStyle.Underline);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Underline);
                         }
                         else
                         {
-                            rtb.SelectionFont = new Font(Font, FontStyle.Regular);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Regular);
                         }
                     }
                     else
@@ -92,23 +92,23 @@ namespace ClassLibrary1
                             if (isUnderline)
                             {
                                 //加粗倾斜且有下划线,此时设置加粗+倾斜+下划线
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
                             }
                             else
                             {
                                 //加粗倾斜且没有下划线,此时设置加粗+倾斜
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Italic);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Italic);
                             }
                         }
                         else
                         if (isUnderline)
                         {
                             //加粗且有下划线,此时设置加粗+下划线
-                            rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Underline);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Underline);
                         }
                         else
                         {
-                            rtb.SelectionFont = new Font(Font, FontStyle.Bold);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold);
                         }
                     }
                     break;
@@ -124,23 +124,23 @@ namespace ClassLibrary1
                             if (isUnderline)
                             {
                                 //加粗倾斜且有下划线,此时设置加粗+下划线
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Underline);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Underline);
                             }
                             else
                             {
                                 //加粗倾斜且没有下划线,此时设置加粗
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold);
                             }
                         }
                         else
                         if (isUnderline)
                         {
                             //倾斜且有下划线,此时设置下划线
-                            rtb.SelectionFont = new Font(Font, FontStyle.Underline);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Underline);
                         }
                         else
                         {
-                            rtb.SelectionFont = new Font(Font, FontStyle.Regular);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Regular);
                         }
                     }
                     else
@@ -154,23 +154,23 @@ namespace ClassLibrary1
                             if (isUnderline)
                             {
                                 //加粗+下划线,此时设置加粗+倾斜+下划线
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
                             }
                             else
                             {
                                 //加粗倾斜且没有下划线,此时设置加粗+倾斜
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Italic);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Italic);
                             }
                         }
                         else
                         if (isUnderline)
                         {
                             //下划线,此时设置倾斜+下划线
-                            rtb.SelectionFont = new Font(Font, FontStyle.Italic | FontStyle.Underline);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Italic | FontStyle.Underline);
                         }
                         else
                         {
-                            rtb.SelectionFont = new Font(Font, FontStyle.Italic);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Italic);
                         }
                     }
                     break;
@@ -186,23 +186,23 @@ namespace ClassLibrary1
                             if (isBold)
                             {
                                 //加粗+倾斜+下划线,此时设置加粗+倾斜
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Italic);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Italic);
                             }
                             else
                             {
                                 //倾斜+下划线,此时设置下划线
-                                rtb.SelectionFont = new Font(Font, FontStyle.Italic);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Italic);
                             }
                         }
                         //下面考虑是否加粗
                         if (isBold)
                         {
                             //加粗且有下划线,此时设置加粗
-                            rtb.SelectionFont = new Font(Font, FontStyle.Bold);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold);
                         }
                         else
                         {
-                            rtb.SelectionFont = new Font(Font, FontStyle.Regular);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Regular);
                         }
                     }
                     else
@@ -216,23 +216,23 @@ namespace ClassLibrary1
                             if (isBold)
                             {
                                 //加粗+倾斜,此时设置加粗+倾斜+下划线
-                                rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline);
                             }
                             else
                             {
                                 //倾斜,此时设置倾斜+下划线
-                                rtb.SelectionFont = new Font(Font, FontStyle.Underline | FontStyle.Italic);
+                                rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Underline | FontStyle.Italic);
                             }
                         }
                         else
                         if (isBold)
                         {
                             //加粗,此时设置加粗+下划线
-                            rtb.SelectionFont = new Font(Font, FontStyle.Bold | FontStyle.Underline);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Bold | FontStyle.Underline);
                         }
                         else
                         {
-                            rtb.SelectionFont = new Font(Font, FontStyle.Underline);
+                            rtb.SelectionFont = new Font(Font.Name, Font.Size, FontStyle.Underline);
                         }
                     }
                     break;
