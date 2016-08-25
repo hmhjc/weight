@@ -148,5 +148,19 @@ namespace ClassLibrary1
         {
             changertbtextsize(21, this.rtb);
         }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            Font font = Rtb.SelectionFont;
+            float size = font.Size;
+            if (size<=9)
+            {
+                changertbtextsize(9, this.rtb);
+            }
+            else
+            {
+
+            }
+        }
     }
 }
