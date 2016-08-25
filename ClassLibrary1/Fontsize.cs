@@ -53,7 +53,6 @@ namespace ClassLibrary1
                     new Font(fontName, tempRichTextBox.SelectionFont.Size,
                              tempRichTextBox.SelectionFont.Style);
             }
-
             //将副本内容插入到到原型中  
             tempRichTextBox.Select(tempRtbStart, len);
             curRichTextBox.SelectedRtf = tempRichTextBox.SelectedRtf;

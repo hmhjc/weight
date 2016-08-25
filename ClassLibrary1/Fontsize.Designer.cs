@@ -54,7 +54,7 @@
             this.toolStripSplitButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(109, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(76, 25);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -149,7 +149,7 @@
             // 小ToolStripMenuItem
             // 
             this.小ToolStripMenuItem.Name = "小ToolStripMenuItem";
-            this.小ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
+            this.小ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
             this.小ToolStripMenuItem.Text = "小";
             this.小ToolStripMenuItem.Click += new System.EventHandler(this.小ToolStripMenuItem_Click);
             // 
@@ -157,7 +157,7 @@
             // 
             this.中ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.中ToolStripMenuItem.Name = "中ToolStripMenuItem";
-            this.中ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
+            this.中ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
             this.中ToolStripMenuItem.Text = "中";
             this.中ToolStripMenuItem.Click += new System.EventHandler(this.中ToolStripMenuItem_Click);
             // 
@@ -165,7 +165,7 @@
             // 
             this.大ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
             this.大ToolStripMenuItem.Name = "大ToolStripMenuItem";
-            this.大ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
+            this.大ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
             this.大ToolStripMenuItem.Text = "大";
             this.大ToolStripMenuItem.Click += new System.EventHandler(this.大ToolStripMenuItem_Click);
             // 
@@ -173,7 +173,7 @@
             // 
             this.较大ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F);
             this.较大ToolStripMenuItem.Name = "较大ToolStripMenuItem";
-            this.较大ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
+            this.较大ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
             this.较大ToolStripMenuItem.Text = "较大";
             this.较大ToolStripMenuItem.Click += new System.EventHandler(this.较大ToolStripMenuItem_Click);
             // 
@@ -181,7 +181,7 @@
             // 
             this.最大ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 21F);
             this.最大ToolStripMenuItem.Name = "最大ToolStripMenuItem";
-            this.最大ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
+            this.最大ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
             this.最大ToolStripMenuItem.Text = "最大";
             this.最大ToolStripMenuItem.Click += new System.EventHandler(this.最大ToolStripMenuItem_Click);
             // 
@@ -191,7 +191,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.toolStrip1);
             this.Name = "Fontsize";
-            this.Size = new System.Drawing.Size(109, 25);
+            this.Size = new System.Drawing.Size(76, 25);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
