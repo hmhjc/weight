@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ClassLibrary1
 {
-    public partial class fontcolourwidget : UserControl
+    public partial class fontbackcolor : UserControl
     {
         private RichTextBox rtb;
         private Color _SelectedColor;
@@ -39,8 +33,7 @@ namespace ClassLibrary1
                 rtb = value;
             }
         }
-
-        public fontcolourwidget()
+        public fontbackcolor()
         {
             InitializeComponent();
             AddComponent();
@@ -90,9 +83,9 @@ namespace ClassLibrary1
         private void fontcolor(string color, RichTextBox rtb)
         {
             //修改文字颜色
-             rtb.SelectionColor = Color.FromName(color);
+            //rtb.SelectionColor = Color.FromName(color);
             //修改背景颜色
-            //rtb.SelectionBackColor = Color.FromName(color);
+            rtb.SelectionBackColor = Color.FromName(color);
         }
     }
 }

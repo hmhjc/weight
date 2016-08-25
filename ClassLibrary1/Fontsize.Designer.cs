@@ -44,19 +44,24 @@
             this.大ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.较大ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.最大ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
             // 
+            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSplitButton1,
-            this.toolStripSplitButton2});
+            this.toolStripSplitButton2,
+            this.toolStripButton1,
+            this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(76, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(111, 25);
             this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.Text = "字体";
             // 
             // toolStripSplitButton1
             // 
@@ -74,7 +79,7 @@
             this.toolStripSplitButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton1.Name = "toolStripSplitButton1";
             this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 22);
-            this.toolStripSplitButton1.Text = "toolStripSplitButton1";
+            this.toolStripSplitButton1.Text = "字体";
             // 
             // 宋体ToolStripMenuItem
             // 
@@ -143,13 +148,13 @@
             this.toolStripSplitButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton2.Image")));
             this.toolStripSplitButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton2.Name = "toolStripSplitButton2";
-            this.toolStripSplitButton2.Size = new System.Drawing.Size(32, 22);
-            this.toolStripSplitButton2.Text = "toolStripSplitButton2";
+            this.toolStripSplitButton2.Size = new System.Drawing.Size(32, 20);
+            this.toolStripSplitButton2.Text = "字号";
             // 
             // 小ToolStripMenuItem
             // 
             this.小ToolStripMenuItem.Name = "小ToolStripMenuItem";
-            this.小ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
+            this.小ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
             this.小ToolStripMenuItem.Text = "小";
             this.小ToolStripMenuItem.Click += new System.EventHandler(this.小ToolStripMenuItem_Click);
             // 
@@ -157,7 +162,7 @@
             // 
             this.中ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.中ToolStripMenuItem.Name = "中ToolStripMenuItem";
-            this.中ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
+            this.中ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
             this.中ToolStripMenuItem.Text = "中";
             this.中ToolStripMenuItem.Click += new System.EventHandler(this.中ToolStripMenuItem_Click);
             // 
@@ -165,7 +170,7 @@
             // 
             this.大ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
             this.大ToolStripMenuItem.Name = "大ToolStripMenuItem";
-            this.大ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
+            this.大ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
             this.大ToolStripMenuItem.Text = "大";
             this.大ToolStripMenuItem.Click += new System.EventHandler(this.大ToolStripMenuItem_Click);
             // 
@@ -173,7 +178,7 @@
             // 
             this.较大ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 18F);
             this.较大ToolStripMenuItem.Name = "较大ToolStripMenuItem";
-            this.较大ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
+            this.较大ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
             this.较大ToolStripMenuItem.Text = "较大";
             this.较大ToolStripMenuItem.Click += new System.EventHandler(this.较大ToolStripMenuItem_Click);
             // 
@@ -181,9 +186,27 @@
             // 
             this.最大ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft YaHei UI", 21F);
             this.最大ToolStripMenuItem.Name = "最大ToolStripMenuItem";
-            this.最大ToolStripMenuItem.Size = new System.Drawing.Size(139, 40);
+            this.最大ToolStripMenuItem.Size = new System.Drawing.Size(152, 40);
             this.最大ToolStripMenuItem.Text = "最大";
             this.最大ToolStripMenuItem.Click += new System.EventHandler(this.最大ToolStripMenuItem_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButton2.Text = "toolStripButton2";
             // 
             // Fontsize
             // 
@@ -191,7 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.toolStrip1);
             this.Name = "Fontsize";
-            this.Size = new System.Drawing.Size(76, 25);
+            this.Size = new System.Drawing.Size(111, 25);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -216,5 +239,7 @@
         private System.Windows.Forms.ToolStripMenuItem 大ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 较大ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 最大ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
     }
 }

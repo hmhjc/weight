@@ -43,6 +43,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="alignment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="alignment.Designer.cs">
+      <DependentUpon>alignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fontbackcolor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="fontbackcolor.Designer.cs">
+      <DependentUpon>fontbackcolor.cs</DependentUpon>
+    </Compile>
     <Compile Include="fontcolour.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="alignment.resx">
+      <DependentUpon>alignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fontbackcolor.resx">
+      <DependentUpon>fontbackcolor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fontcolour.resx">
       <DependentUpon>fontcolour.cs</DependentUpon>
     </EmbeddedResource>

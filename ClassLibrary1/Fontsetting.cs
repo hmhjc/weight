@@ -28,15 +28,41 @@ namespace ClassLibrary1
         private void tsbtn_bold_Click(object sender, EventArgs e)
         {
             ChangeFontStyle(FontStyle.Bold,Rtb);
+            Font font = Rtb.SelectionFont;
+            if (font.Bold)
+            {
+                tsbtn_bold.BackColor = Color.FromArgb(255, 255, 233, 120);
+            }
+            else
+            {
+                tsbtn_bold.BackColor = Color.Transparent;
+            }
         }
         private void tsbtn_Italic_Click(object sender, EventArgs e)
         {
             ChangeFontStyle(FontStyle.Italic, Rtb);
+            Font font = Rtb.SelectionFont;
+            if (font.Italic)
+            {
+                tsbtn_Italic.BackColor = Color.FromArgb(255, 255, 233, 120);
+            }
+            else
+            {
+                tsbtn_Italic.BackColor = Color.Transparent;
+            }
         }
-
         private void tsbtn_Underline_Click(object sender, EventArgs e)
         {
             ChangeFontStyle(FontStyle.Underline, Rtb);
+            Font font = Rtb.SelectionFont;
+            if (font.Underline)
+            {
+                tsbtn_Underline.BackColor = Color.FromArgb(255, 255, 233, 120);
+            }
+            else
+            {
+                tsbtn_Underline.BackColor = Color.Transparent;
+            }
         }
 
         #region ChangeFontStyle(FontStyle style, RichTextBox curRichTextBox) :: setfontstyle;设置字体格式：粗体、斜体、下划线 
