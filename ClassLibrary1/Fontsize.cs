@@ -32,6 +32,7 @@ namespace ClassLibrary1
 
         private void changertbtextstyle(string fontName, RichTextBox curRichTextBox)
         {
+            SetToolStripMenuItemCheckStatus(tssbtn_font, 宋体ToolStripMenuItem);
             RichTextBox tempRichTextBox = new RichTextBox();  //用于保存被选中文本的副本  
             //curRichTextBox是当前文本，即原型  
             int curRtbStart = curRichTextBox.SelectionStart;
@@ -89,77 +90,121 @@ namespace ClassLibrary1
             rtb.Focus();
         }
 
+        public void SetToolStripMenuItemCheckStatus(ToolStripSplitButton menu, ToolStripMenuItem menuitem)
+        {
+            if (menuitem.Checked)
+            {
+                foreach (ToolStripMenuItem item in menu.DropDownItems)
+                {
+                    if (item != menuitem)
+                    {
+                        item.Checked = false;
+                    }
+
+                }
+            }
+        }
+
         private void 宋体ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changertbtextstyle("宋体", this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_font, 宋体ToolStripMenuItem);
         }
 
         private void 黑体ToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             changertbtextstyle("黑体", this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_font, 黑体ToolStripMenuItem);
         }
 
         private void 楷书ToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             changertbtextstyle("楷体", this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_font, 楷书ToolStripMenuItem);
         }
 
         private void 幼圆ToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             changertbtextstyle("幼圆", this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_font, 幼圆ToolStripMenuItem);
         }
 
         private void arialToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             changertbtextstyle("Arial", this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_font, arialToolStripMenuItem);
         }
 
         private void timesNewRomanToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             changertbtextstyle("Times New Roman", this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_font, timesNewRomanToolStripMenuItem);
         }
 
         private void verdanaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             changertbtextstyle("Verdana", this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_font, verdanaToolStripMenuItem);
         }
 
         private void 小ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changertbtextsize(9, this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_size, 小ToolStripMenuItem);
         }
 
         private void 中ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changertbtextsize(12, this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_size, 中ToolStripMenuItem);
+
         }
 
         private void 大ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changertbtextsize(15, this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_size, 大ToolStripMenuItem);
+
         }
 
         private void 较大ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changertbtextsize(18, this.rtb);
+            SetToolStripMenuItemCheckStatus(tssbtn_size, 较大ToolStripMenuItem);
+
         }
 
         private void 最大ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             changertbtextsize(21, this.rtb);
-        }
+            SetToolStripMenuItemCheckStatus(tssbtn_size,最大ToolStripMenuItem);
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        }
+        private void tsbtn_sizeadd_Click(object sender, EventArgs e)
         {
             Font font = Rtb.SelectionFont;
             float size = font.Size;
-            if (size<=9)
+           if (size >= 21)
+            {
+                changertbtextsize(21, this.rtb);
+            }
+            else
+            {
+                changertbtextsize(size + 3, this.rtb);
+            }
+        }
+
+        private void tsbtn_sizesubtract_Click(object sender, EventArgs e)
+        {
+            Font font = Rtb.SelectionFont;
+            float size = font.Size;
+            if (size <= 9)
             {
                 changertbtextsize(9, this.rtb);
             }
             else
             {
-
+                changertbtextsize(size - 3, this.rtb);
             }
         }
     }

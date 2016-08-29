@@ -89,7 +89,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 20);
+            this.toolStripButton2.Size = new System.Drawing.Size(21, 20);
             this.toolStripButton2.Text = "文字颜色";
             // 
             // fontcolourwidget
